@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetes Prediction Form</title>
+</head>
+<body>
+    <h2>Enter Patient Details</h2>
+    <form method="POST" action="/predict">
+        <label for="pregnancies">Pregnancies:</label>
+        <input type="number" id="pregnancies" name="pregnancies" required><br><br>
+
+        <label for="glucose">Glucose:</label>
+        <input type="number" id="glucose" name="glucose" required><br><br>
+
+        <label for="bloodpressure">Blood Pressure:</label>
+        <input type="number" id="bloodpressure" name="bloodpressure" required><br><br>
+
+        <label for="skinthickness">Skin Thickness:</label>
+        <input type="number" id="skinthickness" name="skinthickness" required><br><br>
+
+        <label for="insulin">Insulin:</label>
+        <input type="number" id="insulin" name="insulin" required><br><br>
+
+        <label for="bmi">BMI:</label>
+        <input type="number" step="any" id="bmi" name="bmi" required><br><br>
+
+        <label for="dpf">Diabetes Pedigree Function:</label>
+        <input type="number" step="any" id="dpf" name="dpf" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
